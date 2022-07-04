@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet'  href='style.css'>
+    <script src='resto.js'></script>
+</head>
+<body onload="charger()">
+    <div class="header">
+        <h1> restaurant</h1>
+    </div>
+    <div class="gallerie">
+        <div class="fleche">
+            <img src="img11.jpg" class="flech" onclick="suivant()">
+            <img src="IMG10.jpg" class="flech" onclick="precedente ()" >
+        </div>
+        <div class="photo">
+            <img id="m">
+        </div>
+
+
+    </div>
+    <div class=" commande">
+        <div class="img1">
+            <img src="IMG4.jpg" alt="">
+            <p>prix=5DT</p>
+            quantite=<input type="number" id="qtch" class="n">
+        </div>
+        <div class="img2">
+            <img src="IMG5.jpg" alt="">
+            <p>prix=10DT</p>
+            quantite=<input type="number" id="qts" class="n">
+        </div>
+        <div class="img3">
+            <img src="IMG6.jpg" alt="">
+            <p>prix=15DT</p>
+            quantite=<input type="number" id ="qtp" class="n">
+        </div>
+       
+    </div>
+    <input type="button" value="commamder" id="btn" onclick=" commander()">
+
+
+
+   
+    <div  style ="display: none;"id="formulaire">
+        adress:<input type="text"><br>
+        tel:<input type="number"><br>
+        total a payer:<input type="number" id="tp"><br>
+        <input type="checkbox"> je ne suis pas un robot <br>
+        <input type="button" value="valider"><br>
+        Nom et prenom=<input type="text" ><br>
+    </div>
+    
+        
+
+        
+        
+
+
+
+
+    
+
+    
+</body>
+</html>
